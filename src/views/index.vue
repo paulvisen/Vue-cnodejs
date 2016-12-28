@@ -4,8 +4,8 @@
     </div>
 </template>
 <script>
-    require('../assets/scss/iconfont/iconfont.css');
     require('../assets/scss/CV.scss');
+    require('../assets/scss/iconfont/iconfont.css');
     require('../assets/scss/github-markdown.css');
 
     export default {
@@ -18,7 +18,7 @@
         }
     };
 </script>
-<style lang="sass">
+<style lang="scss">
     .index {
         width: 100%;
         background-color: #fff;

@@ -43,7 +43,7 @@
                             userId: res.id,
                             token: this.token
                         };
-                        sessionStorage.user = JSON.stringify(user);
+                        window.window.sessionStorage.user = JSON.stringify(user);
                         this.$store.dispatch('setUserInfo', user);
                         let redirect = decodeURIComponent(this.$route.query.redirect || '/');
                         this.$router.push({
@@ -62,7 +62,7 @@
         }
     };
 </script>
-<style lang="sass">
+<style lang="scss">
     .page-body {
         padding: 50px 15px;
         min-height: 400px;
@@ -104,8 +104,6 @@
                 height: 42px;
                 width: 48%;
                 outline: medium none;
-                filter: alpha(opacity=0);
-                -moz-opacity: 0;
                 opacity: 0;
             }
         }
